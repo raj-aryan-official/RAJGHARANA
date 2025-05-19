@@ -1,0 +1,63 @@
+/* Suit Page Modern Responsive CSS */
+.suit-page {
+  padding: 60px 5vw 40px 5vw;
+  background: #070e16;
+  min-height: 100vh;
+}
+.suit-page h1 {
+  color: #ffee00;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+.suit-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  justify-items: center;
+}
+.suit-card {
+  background: #181f2a;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #0002;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.suit-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #0004;
+}
+.suit-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+.suit-card h3 {
+  color: #ffee00;
+  font-size: 1.2rem;
+  margin: 12px 0 6px 0;
+  font-weight: 700;
+}
+.suit-card p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 0 10px 16px 10px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .suit-page {
+    padding: 32px 2vw 20px 2vw;
+  }
+  .suit-card img {
+    height: 120px;
+  }
+}
